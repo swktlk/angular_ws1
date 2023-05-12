@@ -1,0 +1,45 @@
+<div>
+    <pre>
+    <label>MovieID </label>
+    <input #IDinput type="text "><br/>
+    <button (click)="Book_id(IDinput.value)" >Click!</button><br/>
+    </pre>
+  </div>
+
+  
+ 
+  <html>
+    <head>
+      <style>
+        table {
+          border-collapse: collapse;
+          width: 100%;
+        }
+        th, td {
+          padding: 17px;
+          text-align: c;
+          border-bottom: 1px solid #ddd;
+        }
+      </style>
+    </head>
+    <body>
+      <table>
+        <thead>
+          <tr>
+            <th>MovieID</th>
+            <th>MovieName</th>
+            <th>TypeMovie</th>
+            <th>MoviePrice</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>{{MovieID}}</td>
+            <td>{{MovieName}}</td>
+            <td>{{MovieType}}</td>
+            <td>{{MoviePrice}}</td>
+          </tr>
+        </tbody>
+      </table>
+    </body>
+  </html>
